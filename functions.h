@@ -3,7 +3,7 @@
 #include <time.h>
 
 int q;
-int qch[4];
+int qch[4], ach[4];
 
 void generate()
 {
@@ -27,4 +27,11 @@ void printch()
 printf("%d\n",q);
 }
 
+void razrad(int chislo)
+{
+ach[0]=chislo/1000;
+ach[1]=chislo/100-ach[0]*10;
+ach[2]=chislo/10-ach[1]*10-ach[0]*100;
+ach[3]=chislo-10*ach[2]-100*ach[1]-1000*ach[0];
+}
 
