@@ -3,6 +3,7 @@
 #include <time.h>
 
 int q;
+int qch[4];
 
 void generate()
 {
