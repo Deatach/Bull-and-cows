@@ -24,7 +24,7 @@ void generate()
 
 void printch()
 {
-printf("%d\n",q);
+    printf("%d\n",q);
 }
 
 void razrad(int chislo)
