@@ -17,7 +17,14 @@ void generate()
     return generate();
     
     else
-    
+        
     return;
 }
+
+
+void printch()
+{
+printf("%d\n",q);
+}
+
 
