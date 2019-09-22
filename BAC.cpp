@@ -7,10 +7,10 @@ int menu()
 {
     setfillstyle(SOLID_FILL, BLACK);
     bar (0, 0, 599, 599);
-    outtextxy(250, 300, "byky i korovi");
-    outtextxy(250, 320, "1 -  start game");
-    outtextxy(250, 350, "2 -  authors");
-    outtextxy(250, 400, "3 -  exit");
+    outtextxy(260, 300, "byky i korovi");
+    outtextxy(260, 330, "1 -  start game");
+    outtextxy(260, 360, "2 -  authors");
+    outtextxy(260, 390, "3 -  exit");
 }
 
 
