@@ -27,6 +27,13 @@ void printch()
     printf("%d\n",q);
 }
 
+int auth()
+{
+    bar (119, 359, 599, 599);
+    outtextxy(310, 360, "Evgeniy Procopiew");
+    outtextxy(310, 390, "Nikita Mironov");
+}
+
 void razrad(int chislo)
 {
     ach[0]=chislo/1000;
