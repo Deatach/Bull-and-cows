@@ -3,7 +3,7 @@
 #include <time.h>
 #include "functions.h"
 
-int p1,p2;
+int p1,p2,code;
 
 int guess()
 {
@@ -82,6 +82,13 @@ printch();
 bar (119, 359, 599, 599);
 return guess();
 }
+}
+else
+{
+delay(2000);
+setfillstyle(SOLID_FILL, GREEN);
+bar (119, 359, 599, 599);
+return guess();
 }
 }
 }
