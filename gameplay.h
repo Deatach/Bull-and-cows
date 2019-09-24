@@ -53,4 +53,13 @@ char f6[4];
 sprintf(f6, "%d", p2);
 outtextxy(147, 400, "CORRECT KEYS ON RIGHT PLACES:");
 outtextxy(390, 400, f6);
+if((ach[0]==ach[1])or(ach[0]==ach[2])or(ach[0]==ach[3])or(ach[1]==ach[2])or(ach[1]==ach[3])or(ach[2]==ach[3])or(ach[0]==0))
+{
+setfillstyle(SOLID_FILL, GREEN);
+bar (119, 359, 599, 599);
+outtextxy(150, 420, "INCORRECT. TRY AGAIN");
+delay(2500);
+bar (119, 359, 599, 599);
+return guess();;
+}
 }
