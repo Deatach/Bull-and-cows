@@ -61,5 +61,11 @@ outtextxy(150, 420, "INCORRECT. TRY AGAIN");
 delay(2500);
 bar (119, 359, 599, 599);
 return guess();;
+if(p1==4 and p2==4)
+{
+printf("You win\n");
+outtextxy(150, 420, "YOU WON, HUMAN");
+delay(4000);
+}
 }
 }
