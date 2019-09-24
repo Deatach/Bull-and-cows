@@ -15,4 +15,25 @@ outtextxy(260, 300, "INSERT THE KEY");
 ach[0]=getch()-48;
 if (ach[0]==-21)
 return menu();
+char f1[4];
+sprintf(f1, "%d", ach[0]);
+outtextxy(220, 360, f1);
+ach[1]=getch()-48;
+if (ach[1]==-21)
+return menu();
+char f2[4];
+sprintf(f2, "%d", ach[1]);
+outtextxy(250, 360, f2);
+ach[2]=getch()-48;
+if (ach[2]==-21)
+return menu();
+char f3[4];
+sprintf(f3, "%d", ach[2]);
+outtextxy(280, 360, f3);
+ach[3]=getch()-48;
+if (ach[3]==-21)
+return menu();
+char f4[4];
+sprintf(f4, "%d", ach[3]);
+outtextxy(310, 360, f4);
 }
