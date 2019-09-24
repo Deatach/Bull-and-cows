@@ -75,6 +75,13 @@ if ( code == 27 )
 {
 return 0;
 }
+else
+{
+generate();
+printch();
+bar (119, 359, 599, 599);
+return guess();
+}
 }
 }
 }
