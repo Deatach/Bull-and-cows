@@ -70,6 +70,11 @@ bar (119, 359, 599, 599);
 outtextxy(150, 420, "NEW GAME?");
 outtextxy(150, 440, "ESC=MENU");
 outtextxy(150, 460, "PRESS KEY=CONTINUE");
+code = getch();
+if ( code == 27 ) 
+{
+return 0;
+}
 }
 }
 }
