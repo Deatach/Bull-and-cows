@@ -36,4 +36,13 @@ return menu();
 char f4[4];
 sprintf(f4, "%d", ach[3]);
 outtextxy(310, 360, f4);
+p1=0;p2=0;
+for(i=0;i<=3;i++)
+for(j=0;j<=3;j++)
+if(qch[i]==ach[j])
+p1=p1+1;
+char f5[4];
+sprintf(f5, "%d", p1);
+outtextxy(220, 380, "CORRECT KEYS:");
+outtextxy(335, 380, f5);
 }
