@@ -5,6 +5,8 @@
 
 int p1,p2,code;
 
+int menu();
+
 int guess()
 {
 	setfillstyle(SOLID_FILL, GREEN);
