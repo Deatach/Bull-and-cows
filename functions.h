@@ -34,11 +34,3 @@ int auth()
     outtextxy(310, 390, "Nikita Mironov");
 }
 
-void razrad(int chislo)
-{
-    ach[0]=chislo/1000;
-    ach[1]=chislo/100-ach[0]*10;
-    ach[2]=chislo/10-ach[1]*10-ach[0]*100;
-    ach[3]=chislo-10*ach[2]-100*ach[1]-1000*ach[0];
-}
-
