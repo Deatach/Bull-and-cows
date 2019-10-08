@@ -5,6 +5,7 @@
 
 int menu()
 {
+{
     setfillstyle(SOLID_FILL, BLACK);
     bar (0, 0, 599, 599);
     outtextxy(260, 300, "byky i korovi");
