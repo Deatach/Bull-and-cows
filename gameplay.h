@@ -1,6 +1,3 @@
-#include <math.h>
-#include <graphics.h>
-#include <time.h>
 #include "functions.h"
 
 int i,j,p1,p2,code;

@@ -1,6 +1,3 @@
-#include <math.h>
-#include <graphics.h>
-#include <time.h>
 #include "gameplay.h"
 
 int menu()
