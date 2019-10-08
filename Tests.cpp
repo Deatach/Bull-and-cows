@@ -2,5 +2,6 @@
 
 main()
 {
-	
+	generate();	
+	printch();
 }
