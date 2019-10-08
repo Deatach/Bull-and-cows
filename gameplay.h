@@ -3,7 +3,7 @@
 #include <time.h>
 #include "functions.h"
 
-int p1,p2,code;
+int i,j,p1,p2,code;
 
 int menu();
 
