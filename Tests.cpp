@@ -2,6 +2,7 @@
 
 main()
 {
+	srand(time(NULL));
 	generate();	
 	printch();
 }
