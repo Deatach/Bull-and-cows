@@ -27,7 +27,7 @@ int menu()
 	delay(3000);
 	return menu();
     }
-    
+    12
     if ( code == 51 ) 
     {
 	return 0;
