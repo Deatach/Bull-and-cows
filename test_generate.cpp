@@ -1,4 +1,4 @@
-#include "menu cpp"
+#include "menu.cpp"
 
 int men()
 {
@@ -13,7 +13,7 @@ int men()
     
     if ( code == 49 ) 
     {
-    generate();	
+    generate();
     printch();
     guess();
     }
@@ -22,7 +22,7 @@ int men()
     {
     Erase();
     auth();
-    delay(3000)
+    delay(3000);
     }
     
     if ( code == 51 ) 
