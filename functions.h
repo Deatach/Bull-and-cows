@@ -21,6 +21,10 @@ void generate()
     return;
 }
 
+void Erase()
+{
+	bar (119, 359, 599, 599);
+}
 
 void printch()
 {

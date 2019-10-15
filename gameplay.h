@@ -54,10 +54,10 @@ int guess()
 	if((ach[0]==ach[1])or(ach[0]==ach[2])or(ach[0]==ach[3])or(ach[1]==ach[2])or(ach[1]==ach[3])or(ach[2]==ach[3])or(ach[0]==0))
 	{
 		setfillstyle(SOLID_FILL, GREEN);
-		bar (119, 359, 599, 599);
+		Erase();
 		outtextxy(150, 420, "INCORRECT. TRY AGAIN");
 		delay(2500);
-		bar (119, 359, 599, 599);
+		Erase();
 		return guess();;
 	}
 	if(p1==4 and p2==4)
@@ -65,7 +65,7 @@ int guess()
 		printf("You win\n");
 		outtextxy(150, 420, "YOU WON, HUMAN");
 		delay(4000);
-		bar (119, 359, 599, 599);
+		Erase();
 		outtextxy(150, 420, "NEW GAME?");
 		outtextxy(150, 440, "ESC=MENU");
 		outtextxy(150, 460, "PRESS KEY=CONTINUE");
@@ -78,7 +78,7 @@ int guess()
 		{
 			generate();
 			printch();
-			bar (119, 359, 599, 599);
+			Erase();
 			return guess();
 		}
 	}
@@ -86,7 +86,7 @@ int guess()
 	{
 		delay(2000);
 		setfillstyle(SOLID_FILL, GREEN);
-		bar (119, 359, 599, 599);
+		Erase();
 		return guess();
 	}
 }
