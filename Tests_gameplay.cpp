@@ -44,7 +44,8 @@ void Test_correct_incorrect()
 
 main()
 {
-	srand(time(NULL));
+	q=1097;
+	printch();
 	initwindow(600, 600);
 	Test_numbers();
 	Test_correct_incorrect();
