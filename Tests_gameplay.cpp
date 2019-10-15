@@ -6,10 +6,7 @@ char f1[4],f2[4],f3[4],f4[4],f5[4];
 void Test_not_random_generate()
 {
     q=1097;
-    qch[0]=q/1000;
-    qch[1]=q/100-qch[0]*10;
-    qch[2]=q/10-qch[1]*10-qch[0]*100;
-    qch[3]=q-10*qch[2]-100*qch[1]-1000*qch[0];
+	razrad();
     return;
 }
 
