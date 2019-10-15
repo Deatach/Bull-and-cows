@@ -1,5 +1,12 @@
 #include "gameplay.h"
 
+int auth()
+{
+    Erase();
+    outtextxy(310, 360, "Evgeniy Procopiew");
+    outtextxy(310, 390, "Nikita Mironov");
+}
+
 int menu()
 {
 {
@@ -21,7 +28,7 @@ int menu()
     
     if ( code == 50 ) 
     {
-	bar (0, 0, 599, 599);
+	Erase();
 	auth();
 	delay(3000);
 	return menu();
