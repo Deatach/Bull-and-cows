@@ -3,6 +3,16 @@
 int i,j,p1,p2,code;
 char f1[4],f2[4],f3[4],f4[4],f5[4];
 
+void Test_not_random_generate()
+{
+    q=1097;
+    qch[0]=q/1000;
+    qch[1]=q/100-qch[0]*10;
+    qch[2]=q/10-qch[1]*10-qch[0]*100;
+    qch[3]=q-10*qch[2]-100*qch[1]-1000*qch[0];
+    return;
+}
+
 void Test_numbers()
 {
 	setfillstyle(SOLID_FILL, GREEN);
@@ -24,12 +34,12 @@ void Test_numbers()
 	ach[3]=getch()-48;
 	char f4[4];
 	sprintf(f4, "%d", ach[3]);
-	outtextxy(310, 360, f4);
-	delay(2500);	
+	outtextxy(310, 360, f4);	
 }
 
 void Test_correct_incorrect()
 {
+	sprintf(f5, "%d", p1);
 	outtextxy(220, 380, "CORRECT KEYS:");
 	outtextxy(335, 380, f5);
 	if(qch[0]==ach[0]) p2=p2+1;
@@ -44,9 +54,18 @@ void Test_correct_incorrect()
 
 main()
 {
-	q=1097;
+	Test_not_random_generate();
 	printch();
 	initwindow(600, 600);
 	Test_numbers();
+	p1=0;p2=0;
+	for(i=0;i<=3;i++)
+	for(j=0;j<=3;j++)
+	if(qch[i]==ach[j])
+	p1=p1+1;
+	char f5[4];
+	sprintf(f5, "%d", p1);
+	char f6[4];
 	Test_correct_incorrect();
+	delay(1000);
 }
