@@ -25,7 +25,7 @@ void generate()
 
 void Erase()
 {
-	bar (119, 359, 599, 599);
+	bar (0, 0, 599, 599);
 }
 
 void printch()
