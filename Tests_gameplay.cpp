@@ -2,8 +2,6 @@
 
 void Test_numbers()
 {
-	srand(time(NULL));
-	initwindow(600, 600);
 	setfillstyle(SOLID_FILL, GREEN);
 	bar (0, 0, 599, 599);
 	outtextxy(260, 150, "esc = return to menu");
@@ -29,5 +27,7 @@ void Test_numbers()
 
 main()
 {
+	srand(time(NULL));
+	initwindow(600, 600);
 	Test_numbers();
 }
