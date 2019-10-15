@@ -18,7 +18,7 @@ void Test_numbers()
 	setfillstyle(SOLID_FILL, GREEN);
 	bar (0, 0, 599, 599);
 	outtextxy(260, 150, "esc = return to menu");
-	outtextxy(260, 300, "INSERT THE KEY");
+	outtextxy(260, 300, "INSERT THE KEY(Test N=1097)");
 	ach[0]=getch()-48;
 	char f1[4];
 	sprintf(f1, "%d", ach[0]);
@@ -35,6 +35,18 @@ void Test_numbers()
 	char f4[4];
 	sprintf(f4, "%d", ach[3]);
 	outtextxy(310, 360, f4);	
+}
+
+void Mathem()
+{
+	p1=0;p2=0;
+	for(i=0;i<=3;i++)
+	for(j=0;j<=3;j++)
+	if(qch[i]==ach[j])
+	p1=p1+1;
+	char f5[4];
+	sprintf(f5, "%d", p1);
+	char f6[4];
 }
 
 void Test_correct_incorrect()
@@ -58,14 +70,7 @@ main()
 	printch();
 	initwindow(600, 600);
 	Test_numbers();
-	p1=0;p2=0;
-	for(i=0;i<=3;i++)
-	for(j=0;j<=3;j++)
-	if(qch[i]==ach[j])
-	p1=p1+1;
-	char f5[4];
-	sprintf(f5, "%d", p1);
-	char f6[4];
+	Mathem();
 	Test_correct_incorrect();
 	delay(1000);
 }
